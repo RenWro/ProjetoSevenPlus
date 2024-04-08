@@ -473,21 +473,93 @@
         background: #f00;
     }
 }
-    header .row #nav-bar .mobile-menu{
-    display: none !important;
-  }
-  .mobile-menu-icon{
-      width: 75px;
-      height: 75px;
-      display: block;
-      padding: 15px;
-      z-index: 9999;
-  }
-    .mobile-menu-icon img{width: 100%;}
-    .mobile-menu-icon button{
-        width: 75px;
-        height: 75px;
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
+}
+header .row #nav-bar .mobile-menu{
+    display: none;
+    /*display: block;*/
+}
+header .row #nav-bar .mobile-menu-icon{
+    width: 75px;
+    height: 75px;
+    display: block;
+    padding: 15px 5px;
+    z-index: 9999;
+}
+header .row #nav-bar .mobile-menu-icon img{width: 100%;}
+header .row #nav-bar .mobile-menu-icon button{
+    width: 75px;
+    height: 75px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+header .row #nav-bar .mobile-menu{
+    width: 25%;
+    height: 100%;
+    position: fixed;
+    background: #000!important;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    /* para todos os navegadores menos fifefox e edge ou explorer*/
+    /*transition: all 500ms ease;
+    -webkit-transition: all 500ms ease;
+    transform: translate(100%,0);
+    -ms-transform: translate(100%,0);
+    -webkit-transform: translate(100%,0);*/
+    animation-duration: 5s;
+    animation-name: slidein;
+}
+@keyframes slidein {
+    from{
+        margin-right: 0%;
+        width: 50%;
     }
+    to{
+        margin-right: 0%;
+    }
+}    
+
+header .row #nav-bar .mobile-menu ul{
+    width: 100%;
+    display: flex;
+    flex-direction:column ;
+    text-align: left;
+    padding-bottom: 1rem;
+    margin-left: 20px;
+    margin-top: 100px;
+}
+header .row #nav-bar .mobile-menu ul li{
+    width: 90%;
+    display: block;
+
+}
+header .row #nav-bar .mobile-menu ul li:hover{
+    background: #fff;
+    color: #000;
+}
+header .row #nav-bar .mobile-menu a{
+    width: 100%;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 1.2rem;
+}
+header .row #nav-bar .mobile-menu a:hover{
+    color: #000;
+}
+/*header .row #nav-bar .open{
+    display: block;
+    ->para todos os navegadores menos fifefox e edge ou explorer
+    transform: translate(0,0);
+     ->para edge ou explorer
+    -ms-transform: translate(0,0);
+    ->para firefox
+    -webkit-transform: translate(0,0);
+} */
+/*header .row #nav-bar .close{
+    position: fixed;
+    left: 10px;
+    top: 10px;
+} */
