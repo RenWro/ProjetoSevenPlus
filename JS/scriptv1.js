@@ -15,13 +15,16 @@
 
 function menuShow(){
     //No documento HTML querySelector irá procurar e selecionar a classe '.mobile-menu e atribuir na variável
-    let menuMobile = document.querySelector('.mobile-menu');
+    let menuMobile = document.querySelector('.mobile-menu-icon');
+    let mobileMenuIcon = document.querySelector(mobileMenuIcon);
     if (menuMobile.classList.contains('open')){
         menuMobile.classList.remove('open');
         document.querySelector('icon').src = "imagens/menu_36dp.svg");
     } else {
         menuMobile.classList.add('open');
+        mobileMenuIcon.classList.add('close');
         document.querySelector('icon').src = "imagens/close_36dp.svg");
+
     }
 
 }
