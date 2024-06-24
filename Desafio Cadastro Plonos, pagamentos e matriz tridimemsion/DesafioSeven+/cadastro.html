@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Seven+ - Cadastro</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #11111f;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .form-container {
+            background-color: #ffffff;
+            border: 1px solid #003049;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 600px;
+        }
+        .form-container label {
+            display: block;
+            margin-top: 10px;
+            color: #003049;
+        }
+        .form-container input {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #003049;
+            border-radius: 5px;
+        }
+        .form-container button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            border: none;
+            background-color: #003049;
+            color: #fdf0d5;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .form-container button:hover {
+            background-color: #669BBC;
+        }
+        img {
+        img {
+            max-width: 150px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+<img src="img/seven.png" alt="Seven+">
+<div class="form-container">
+    <form id="cadastro" method="post" action="cadastro_process.php">
+        <h2>Cadastro</h2>
+        <label>Nome</label>
+        <input type="text" name="nome" required>
+        <label>E-mail</label>
+        <input type="email" name="email" required>
+        <label>Senha</label>
+        <input type="password" name="senha" required>
+        <label>Confirme a Senha</label>
+        <input type="password" name="confirmar_senha" required>
+        <button type="submit">Próxima Etapa</button>
+    </form>
+</div>
+</body>
+</html>
