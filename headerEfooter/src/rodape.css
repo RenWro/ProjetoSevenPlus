@@ -1,0 +1,50 @@
+.rodape
+{
+    padding: 2rem 3rem;
+}
+
+.rodape__redes-sociais
+{
+    width: 15%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.rodape__listas
+{
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(4,23%);
+    justify-content: start;
+    column-gap: 3rem;
+    font-size: 12px;
+
+}
+
+.rodape__listas__lista 
+{
+    padding-left: 0;
+    margin-bottom: 2rem;
+}
+
+.rodape__listas__lista__item
+{
+    list-style-type: none;
+    padding: 0.5rem;
+}
+
+.rodape__listas__lista__item__ancora
+{
+    text-decoration: none;
+    color: var(--cor-padrao);
+}
+
+.rodape__listas__servico__botao
+{
+    border: 2px solid var(--cor-padrao);
+    background-color: black;
+    color: var(--cor-padrao);
+    /* width: 55%; */
+    padding: 1rem;
+    margin-bottom: 3rem;
+}
