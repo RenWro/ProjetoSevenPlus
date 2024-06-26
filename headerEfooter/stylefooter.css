@@ -1,0 +1,59 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.conteudo {
+    flex: 1; /* Permite que o conteúdo principal cresça e empurre o rodapé para baixo */
+}
+
+/* Estilos para o rodapé */
+.rodape {
+    background: linear-gradient(to top, black 70%, rgba(0, 0, 0, 0) 100%);
+    padding: 40px 20px;
+    text-align: center;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.rodape__conteudo {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.rodape__logo-wrapper {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.rodape__logo {
+    max-height: 120px;
+    position: absolute;
+    top: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.rodape__links {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.rodape__links li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.rodape__links a {
+    text-decoration: none;
+    color: white;
+}

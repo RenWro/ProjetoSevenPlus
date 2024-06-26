@@ -1,0 +1,76 @@
+/* Remove margens e espaçamentos do body */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+/* Estilos para o header */
+.cabecalho {
+    background: linear-gradient(to bottom, black 70%, rgba(0, 0, 0, 0) 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 160px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    position: fixed; /* Mantém o header fixo no topo */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Garante que o header fique acima de outros elementos */
+    overflow: hidden;
+}
+
+/* Estilos para a logo */
+.cabecalho__logo {
+    max-height: 140px;
+    position: absolute;
+    bottom: -30px; /* Faz a logo ultrapassar a borda inferior */
+    left: 40px;
+}
+
+/* Estilos para a navegação */
+.cabecalho__navegacao {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    margin-top: 30px;
+    padding-left: 160px;
+}
+
+.cabecalho__navegacao__lista-esquerda,
+.cabecalho__navegacao__lista-direita {
+    display: flex;
+    list-style: none;
+}
+
+.cabecalho__navegacao__lista-esquerda__item,
+.cabecalho__navegacao__lista-direita__item {
+    margin: 0 10px;
+}
+
+.cabecalho__navegacao__lista-esquerda__item__ancora {
+    text-decoration: none;
+    color: white;
+}
+
+/* Empurra a lista direita para a extrema direita */
+.cabecalho__navegacao__lista-direita {
+    margin-left: auto;
+    padding-right: 20px; /* Adiciona padding à direita para alinhar os ícones */
+}
+
+.cabecalho__navegacao__lista-direita__item svg,
+.cabecalho__navegacao__lista-direita__item img {
+    fill: white;
+    cursor: pointer;
+    display: flex;
+    margin-top: -30px;
+}
+
+
+
