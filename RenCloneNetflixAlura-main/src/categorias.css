@@ -1,0 +1,33 @@
+
+.categorias
+{
+    max-width: 100vw;
+    padding: 0 3rem;
+    margin-top: 3rem;
+}
+
+.categorias__nome
+{
+    font-size: 20px;
+}
+
+.categorias__trilho
+{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    gap: 10px;
+    padding-bottom: 1rem;
+    /* transition: 1s; */
+}
+
+.categorias__trilho__item
+{
+    width: 100%;
+    transition: 0.5s;
+}
+
+.categorias__trilho__item:hover
+{
+    z-index: 1;
+    transform: scale(1.2);
+}

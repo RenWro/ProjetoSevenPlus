@@ -1,0 +1,54 @@
+.banner
+{
+    /* display: flex; */
+}
+
+.banner__div
+{
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    row-gap: 1rem;
+    padding: 0 3rem;
+}
+
+.banner__div__botoes
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 1rem;
+}
+
+.banner__div__botoes__ancora
+{
+    text-decoration: none;
+    text-align: center;
+    background-color: gray;
+    box-sizing: border-box;
+    width: 50%;
+    padding: 1rem;
+    border-radius: 5px;
+    color: var(--cor-padrao);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+
+.bi-info-circle-fill,.bi-play-fill
+{
+    margin-right: 0.5rem;
+}
+
+.banner__div__botoes__ancora:hover
+{
+    background-color: var(--cor-padrao);
+    color: black;
+    transition: 1S;
+}
+
+
+
+

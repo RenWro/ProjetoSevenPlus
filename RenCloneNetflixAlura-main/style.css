@@ -1,0 +1,36 @@
+@import url("./src/banner.css");
+@import url("./src/cabecalho.css");
+@import url("./src/categorias.css");
+@import url("./src/rodape.css");
+
+:root
+{
+    --cor-padrao: #FFF;
+    --fonte-padrao: 'Inter', sans-serif;
+    --tamanho-padrao: 12px;
+    --peso-padrao: 700;
+}
+
+
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.corpo
+{
+    color: var(--cor-padrao);
+    font-family: var(--fonte-padrao);
+    font-size: var(--tamanho-padrao);
+    font-weight: var(--peso-padrao);
+    background-image: url("./img/Imagem-fundo.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    box-shadow: inset 0 0 8rem 3rem black;
+    user-select: none;
+    background-color: black;
+}
+
+
