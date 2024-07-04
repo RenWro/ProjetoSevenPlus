@@ -1,0 +1,42 @@
+.rodape {
+    padding: 2rem 3rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: var(--cor-padrao);
+}
+
+.rodape__redes-sociais {
+    width: 15%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.rodape__listas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+    font-size: 12px;
+}
+
+.rodape__listas__lista {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.rodape__listas__lista__item {
+    padding: 0.5rem 0;
+}
+
+.rodape__listas__lista__item__ancora {
+    text-decoration: none;
+    color: var(--cor-padrao);
+}
+
+.rodape__listas__servico__botao {
+    border: 2px solid var(--cor-padrao);
+    background-color: black;
+    color: var(--cor-padrao);
+    padding: 1rem;
+    margin-bottom: 3rem;
+    cursor: pointer;
+}

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <title>Seven Plus</title>
+</head>
+<body class="corpo">
+<header class="cabecalho">
+    <img src="./img/logo 1.svg" alt="Logo da Seven Plus" class="cabecalho__logo">
+    <nav class="cabecalho__navegacao">
+        <ul class="cabecalho__navegacao__lista-esquerda">
+            <li class="cabecalho__navegacao__lista-esquerda__item">
+                <a href="#" class="cabecalho__navegacao__lista-esquerda__item__ancora">Início</a>
+            </li>
+            <li class="cabecalho__navegacao__lista-esquerda__item">
+                <a href="#" class="cabecalho__navegacao__lista-esquerda__item__ancora">Séries</a>
+            </li>
+            <li class="cabecalho__navegacao__lista-esquerda__item">
+                <a href="#" class="cabecalho__navegacao__lista-esquerda__item__ancora">Filmes</a>
+            </li>
+        </ul>
+        <ul class="cabecalho__navegacao__lista-direita">
+            <li class="cabecalho__navegacao__lista-direita__item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                </svg>
+            </li>
+            <li class="cabecalho__navegacao__lista-direita__item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bell-fill" viewBox="0 0 16 16">
+                    <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z"/>
+                </svg>
+            </li>
+            <li class="cabecalho__navegacao__lista-direita__item">
+                <img src="./img/user.svg" alt="ícone de usuário">
+            </li>
+            <li class="cabecalho__navegacao__lista-direita__item dropdown">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill dropdown-toggle" viewBox="0 0 16 16">
+                    <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                </svg>
+                <div class="dropdown-menu">
+                    <div class="dropdown-header">
+                        <div class="dropdown-item">
+                            <div class="profile-pic"></div>
+                            <div class="profile-info">
+                                <p>Biel ADM</p>
+                            </div>
+                        </div>
+                        <div class="dropdown-item">
+                            <div class="profile-pic"></div>
+                            <div class="profile-info">
+                                <p>Guilherme</p>
+                                <span>Alterar Perfil</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown-divider"></div>
+                    <div class="dropdown-item">Assinatura</div>
+                    <div class="dropdown-item">Segurança</div>
+                    <div class="dropdown-item">Aparelhos Conectados</div>
+                    <div class="dropdown-item">Perfis</div>
+                    <div class="dropdown-item">Sair</div>
+                </div>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+    <section class="banner">
+        <div class="banner__div">
+            <img src="./img/poster 1.png" alt="Titulo do Filme SPIDERHEAD">
+            <p>Em uma penitenciária de última geração, um detento participa de um experimento com drogas que controlam as emoções para um gênio da indústria farmacêutica</p>
+            <div class="banner__div__botoes">
+                <a href="#" class="banner__div__botoes__ancora">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                    </svg>
+                    Assistir</a>
+                <a href="#" class="banner__div__botoes__ancora">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-info-circle-fill" viewBox="0 0 16 16">
+                        <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+                    </svg>
+                    Mais informações</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="categorias">
+        <p class="categorias__nome">Minha lista</p>
+        <div class="categorias__trilho">
+            <img src="./img/trilhos/Trilho1/poster_01.png" alt="Imagem da série Bojack Horseman" class="categorias__trilho__item">
+            <img src="./img/trilhos/Trilho1/poster_02.png" alt="Imagem da cinematográfica Ozark" class="categorias__trilho__item">
+            <img src="./img/trilhos/Trilho1/poster_03.png" alt="Imagem do filme A vizinha da mulher na janela" class="categorias__trilho__item">
+            <img src="./img/trilhos/Trilho1/poster_04.png" alt="Imagem da série Braking Bad" class="categorias__trilho__item">
+            <img src="./img/trilhos/Trilho1/poster_05.png" alt="Imagem da produção cinematográfica The end of the fuking world" class="categorias__trilho__item">
+        </div>
+        <p class="categorias__nome">Em alta</p>
+        <div class="categorias__trilho">
+            <img src="./img/trilhos/Trilho2/poster_01.png" alt="Imagem da série Bojack Horseman" class="categorias__trilho__item">
+            <img src="./img/trilhos/Trilho2/poster_02.png" alt="Imagem da cinematográfica Ozark" class="categorias__trilho__item">
+            <img src="./img/trilhos/Trilho2/poster_03.png" alt="Imagem do filme A vizinha da mulher na janela" class="categorias__trilho__item">
+            <img src="./img/trilhos/Trilho2/poster_04.png" alt="Imagem da série Braking Bad" class="categorias__trilho__item">
+            <img src="./img/trilhos/Trilho2/poster_05.png" alt="Imagem da produção cinematográfica The end of the fuking world" class="categorias__trilho__item">
+        </div>
+        <p class="categorias__nome">Séries estrangeiras</p>
+        <div class="categorias__trilho">
+            <img src="./img/trilhos/Trilho3/poster_01.png" alt="Imagem da série Bojack Horseman" class="categorias__trilho__item">
+            <img src="./img/trilhos/Trilho3/poster_02.png" alt="Imagem da cinematográfica Ozark" class="categorias__trilho__item">
+            <img src="./img/trilhos/Trilho3/poster_03.png" alt="Imagem do filme A vizinha da mulher na janela" class="categorias__trilho__item">
+            <img src="./img/trilhos/Trilho3/poster_04.png" alt="Imagem da série Braking Bad" class="categorias__trilho__item">
+            <img src="./img/trilhos/Trilho3/poster_05.png" alt="Imagem da produção cinematográfica The end of the fuking world" class="categorias__trilho__item">
+        </div>
+        <p class="categorias__nome">Séries excêntricas de humor ácido</p>
+        <a href="#section3" class="arrow__btn"></a>
+        <div class="categorias__trilho">
+            <img src="./img/trilhos/Trilho4/poster_01.png" alt="Imagem da série Bojack Horseman" class="categorias__trilho__item">
+            <img src="./img/trilhos/Trilho4/poster_02.png" alt="Imagem da cinematográfica Ozark" class="categorias__trilho__item">
+            <img src="./img/trilhos/Trilho4/poster_03.png" alt="Imagem do filme A vizinha da mulher na janela" class="categorias__trilho__item">
+            <img src="./img/trilhos/Trilho4/poster_04.png" alt="Imagem da série Braking Bad" class="categorias__trilho__item">
+            <img src="./img/trilhos/Trilho4/poster_05.png" alt="Imagem da produção cinematográfica The end of the fuking world" class="categorias__trilho__item">
+        </div>
+    </section>
+
+</main>
+<footer class="rodape">
+    <div class="rodape__redes-sociais">
+        <a href="https://www.facebook.com/sevenplus" target="_blank">
+            <i class="fa-brands fa-facebook-f fa-2xl" style="color: #ffffff;"></i>
+        </a>
+        <a href="https://www.instagram.com/sevenplus" target="_blank">
+            <i class="fa-brands fa-instagram fa-2xl" style="color: #ffffff;"></i>
+        </a>
+        <a href="https://twitter.com/sevenplus" target="_blank">
+            <i class="fa-brands fa-twitter fa-2xl" style="color: #ffffff;"></i>
+        </a>
+        <a href="https://www.youtube.com/channel/sevenplus" target="_blank">
+            <i class="fa-brands fa-youtube fa-2xl" style="color: #ffffff;"></i>
+        </a>
+    </div>
+    <div class="rodape__listas">
+        <ul class="rodape__listas__lista">
+            <li class="rodape__listas__lista__item">
+                <a href="#" class="rodape__listas__lista__item__ancora">Termos e aviso de privacidade</a>
+            </li>
+        </ul>
+        <ul class="rodape__listas__lista">
+            <li class="rodape__listas__lista__item">
+                <a href="#" class="rodape__listas__lista__item__ancora">Envie-nos comentários</a>
+            </li>
+        </ul>
+        <ul class="rodape__listas__lista">
+            <li class="rodape__listas__lista__item">
+                <a href="#" class="rodape__listas__lista__item__ancora">Precisa de ajuda?</a>
+            </li>
+        </ul>
+
+            <p>₢ 2024 Seven Plus, Inc</p>
+        </div>
+    </div>
+</footer>
+<script src="https://kit.fontawesome.com/edcab6d189.js" crossorigin="anonymous"></script>
+</body>
+</html>
