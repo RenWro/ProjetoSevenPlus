@@ -1,0 +1,29 @@
+.categorias {
+    width: 100%; /* Garante que a seção ocupe toda a largura */
+    padding: 0 3rem; /* Ajusta o padding conforme necessário */
+    margin-top: 3rem;
+}
+
+.categorias__nome {
+    font-size: 20px;
+    margin-bottom: 1rem;
+}
+
+.categorias__trilho {
+    display: flex; /* Usa flexbox para distribuir os itens */
+    overflow-x: auto; /* Permite rolagem horizontal se necessário */
+    gap: 10px;
+    padding-bottom: 1rem;
+    justify-content: space-between; /* Garante espaçamento igual entre os itens */
+}
+
+.categorias__trilho__item {
+    flex: 0 0 auto; /* Garante que os itens ocupem o espaço necessário */
+    width: calc((100% / 5) - 10px); /* Ajusta a largura dos itens para caberem na tela com espaçamento */
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.categorias__trilho__item:hover {
+    transform: scale(1.1);
+}
